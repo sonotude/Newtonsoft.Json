@@ -2,7 +2,7 @@
   $zipFileName = "Json80r4.zip"
   $majorVersion = "8.0"
   $majorWithReleaseVersion = "8.0.4"
-  $nugetPrelease = "beta3"
+  $nugetPrelease = "beta4"
   $version = GetVersion $majorWithReleaseVersion
   $packageId = "Newtonsoft.Json"
   $signAssemblies = $false
@@ -11,7 +11,7 @@
   $buildNuGet = $true
   $treatWarningsAsErrors = $false
   $workingName = if ($workingName) {$workingName} else {"Working"}
-  $netCliVersion = "1.0.0-rc2-002457"
+  $netCliVersion = "1.0.0-preview1-002702"
   
   $baseDir  = resolve-path ..
   $buildDir = "$baseDir\Build"
