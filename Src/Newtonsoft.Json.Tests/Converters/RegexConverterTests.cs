@@ -101,6 +101,18 @@ namespace Newtonsoft.Json.Tests.Converters
             Assert.AreEqual(RegexOptions.IgnoreCase, regex.Options);
         }
 
+	    [Test]
+	    public void DeserializeNull()
+	    {
+		    string json = @"{
+							""Regex"": null
+							}";
+
+		    RegexTestClass r = JsonConvert.DeserializeObject<RegexTestClass>(json);
+
+			Assert.AreEqual(null, r.Regex);
+	    }
+
         [Test]
         public void DeserializeISerializeRegexJson()
         {
